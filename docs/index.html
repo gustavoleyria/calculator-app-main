@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League Spartan">
+
+  
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body class="body" id="themet3">
+  <div class="container">
+    <div class="options" id="optionst3">
+      <h2>calc</h2>
+      <div class="rigth">
+        <p>THEME</p>
+        <div class="button">
+          <div class="numberoption">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="buttonoption" id="buttonoptiont3"></div>
+            <button class="btn btn1" id="btnt31" onclick="changeTheme1()"></button>
+            <button class="btn btn2" id="btnt32" onclick="changeTheme2()"></button>
+            <button class="btn btn3" id="btnt33" onclick="changeTheme3()"></button>
+        </div>
+      </div>
+    </div>
+    <div class="screen" id="screent3">
+      
+    </div>
+    <div class="tools" id="toolst3">
+      <div class="numbers">
+        <button onclick="clickNumber('7')">7</button>
+        <button onclick="clickNumber('8')">8</button>
+        <button onclick="clickNumber('9')">9</button>
+        <button class="del" id="delt3" onclick="delNumber()">DEL</button>
+      </di>
+      <di class="numbers">
+        <button onclick="clickNumber('4')">4</button>
+        <button onclick="clickNumber('5')">5</button>
+        <button onclick="clickNumber('6')">6</button>
+        <button onclick="suma()">+</button>
+      </di>
+      <di class="numbers">
+        <button onclick="clickNumber('1')">1</button>
+        <button onclick="clickNumber('2')">2</button>
+        <button onclick="clickNumber('3')">3</button>
+        <button onclick="resta()">-</button>
+      </di>
+      <di class="numbers">
+        <button  onclick="clickNumber('.')">.</button>
+        <button onclick="clickNumber('0')">0</button>
+        <button onclick="dividir()">/</button>
+        <button onclick="multiplicar()">X</button>
+      </di>
+      <di class="numberfinal">
+        <button class="reset" id="resett3" onclick="resetOperation()">RESET</button>
+        <button class="igual" id="igualt3" onclick="igual()">=</button>
+      </di>
+    </div>
+  </div>
+
+  
+
+  <script src="./index.js"></script>
+</body>
+</html>

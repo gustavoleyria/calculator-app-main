@@ -1,0 +1,336 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "League Spartan", "Sans Serif";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 5%;
+}
+.container .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .options h2 {
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 5px;
+}
+.container .options .rigth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container .options .rigth p {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.container .options .button {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -28%;
+  margin-left: 10%;
+}
+.container .options .button .numberoption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .options .button .numberoption p {
+  margin-top: 35%;
+  font-weight: 700;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.container .options .button .buttonoption {
+  margin-top: -10%;
+  justify-content: space-around;
+  border-radius: 15px;
+  height: 13px;
+  width: 85px;
+  margin-bottom: -18%;
+  background-color: yellow;
+}
+.container .options .button .btn {
+  background-color: none;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-left: 7px;
+}
+.container .screen {
+  margin-top: -50%;
+  height: 75px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 60px;
+  font-weight: 900;
+  padding-right: 15px;
+  padding-top: 2%;
+  background-color: aqua;
+}
+@media screen and (max-width: 375px) {
+  .container .screen {
+    margin-top: -30%;
+    padding-right: 10px;
+  }
+}
+.container .tools {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: -80%;
+  width: 101%;
+  height: 29%;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 375px) {
+  .container .tools {
+    margin-top: -30%;
+    height: 25%;
+  }
+}
+.container .tools .numbers {
+  display: block;
+  justify-content: space-around;
+}
+.container .tools .numbers button {
+  background-color: aqua;
+  height: 40px;
+  width: 70px;
+  margin-left: 6%;
+  margin-top: 2%;
+  font-size: 20px;
+  font-weight: 900;
+}
+@media screen and (max-width: 375px) {
+  .container .tools .numbers button {
+    width: 55px;
+    margin-left: 5%;
+  }
+}
+.container .tools .numberfinal button {
+  width: 41%;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    gap: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+#themet1 {
+  background-color: hsl(222deg, 26%, 31%);
+}
+
+#optionst1 {
+  color: hsl(0deg, 0%, 100%);
+}
+
+#buttonoptiont1 {
+  background-color: hsl(224deg, 36%, 15%);
+}
+
+#btnt11 {
+  background-color: hsl(6deg, 63%, 50%);
+}
+
+#btnt11:hover {
+  cursor: grabbing;
+}
+
+#btnt12, #btnt13 {
+  background-color: hsl(224deg, 36%, 15%);
+  border-style: none;
+}
+
+#screent1 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(224deg, 36%, 15%);
+}
+
+#toolst1 {
+  background-color: hsl(223deg, 31%, 20%);
+}
+
+#toolst1 button {
+  background-color: hsl(30deg, 25%, 89%);
+  box-shadow: 0px -3px 0px hsl(28deg, 16%, 65%) inset;
+  border-radius: 5px;
+  color: hsl(221deg, 14%, 31%);
+}
+
+#toolst1 button:hover {
+  cursor: grabbing;
+}
+
+#toolst1 #delt1 {
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(224deg, 28%, 35%) inset;
+}
+
+#toolst1 #resett1 {
+  background-color: hsl(225deg, 21%, 49%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(224deg, 28%, 35%) inset;
+}
+
+#toolst1 #igualt1 {
+  background-color: hsl(6deg, 63%, 50%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(6deg, 70%, 34%) inset;
+}
+
+#toolst1 #delt1:hover, #toolst1 #resett1:hover, #toolst1 #igualt1:hover {
+  opacity: 0.6;
+}
+
+#themet2 {
+  background-color: hsl(0deg, 0%, 90%);
+}
+
+#optionst2 {
+  color: hsl(60deg, 10%, 19%);
+}
+
+#buttonoptiont2 {
+  background-color: hsl(0deg, 0%, 93%);
+}
+
+#btnt22 {
+  background-color: hsl(25deg, 98%, 40%);
+}
+
+#btnt22:hover {
+  cursor: grabbing;
+}
+
+#btnt21, #btnt23 {
+  background-color: hsl(0deg, 0%, 90%);
+  border-style: none;
+}
+
+#screent2 {
+  color: hsl(60deg, 10%, 19%);
+  background-color: hsl(0deg, 0%, 93%);
+}
+
+#toolst2 {
+  background-color: hsl(0deg, 5%, 81%);
+}
+
+#toolst2 button {
+  background-color: hsl(45deg, 7%, 89%);
+  box-shadow: 0px -3px 0px hsl(35deg, 11%, 61%) inset;
+  border-radius: 5px;
+  color: hsl(60deg, 10%, 19%);
+}
+
+#toolst2 button:hover {
+  cursor: grabbing;
+}
+
+#toolst2 #delt2 {
+  background-color: hsl(185deg, 42%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(185deg, 58%, 25%) inset;
+}
+
+#toolst2 #resett2 {
+  background-color: hsl(185deg, 42%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(185deg, 58%, 25%) inset;
+}
+
+#toolst2 #igualt2 {
+  background-color: hsl(25deg, 98%, 40%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(25deg, 99%, 27%) inset;
+}
+
+#toolst2 #delt2:hover, #toolst2 #resett2:hover, #toolst2 #igualt2:hover {
+  opacity: 0.6;
+}
+
+#themet3 {
+  background-color: hsl(268deg, 75%, 9%);
+}
+
+#optionst3 {
+  color: hsl(52deg, 100%, 62%);
+}
+
+#buttonoptiont3 {
+  background-color: hsl(268deg, 71%, 12%);
+}
+
+#btnt33 {
+  background-color: hsl(176deg, 100%, 44%);
+}
+
+#btnt33:hover {
+  cursor: grabbing;
+}
+
+#btnt31, #btnt32 {
+  background-color: hsl(268deg, 75%, 9%);
+  border-style: none;
+}
+
+#screent3 {
+  color: hsl(52deg, 100%, 62%);
+  background-color: hsl(268deg, 71%, 12%);
+}
+
+#toolst3 {
+  background-color: hsl(268deg, 71%, 12%);
+}
+
+#toolst3 button {
+  background-color: hsl(268deg, 47%, 21%);
+  box-shadow: 0px -3px 0px hsl(290deg, 70%, 36%) inset;
+  border-radius: 5px;
+  color: hsl(52deg, 100%, 62%);
+}
+
+#toolst3 button:hover {
+  cursor: grabbing;
+}
+
+#toolst3 #delt3 {
+  background-color: hsl(290deg, 70%, 36%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(285deg, 91%, 52%) inset;
+}
+
+#toolst3 #resett3 {
+  background-color: hsl(290deg, 70%, 36%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px -3px 0px hsl(285deg, 91%, 52%) inset;
+}
+
+#toolst3 #igualt3 {
+  background-color: hsl(176deg, 100%, 44%);
+  color: hsl(198deg, 20%, 13%);
+  box-shadow: 0px -3px 0px hsl(177deg, 92%, 70%) inset;
+}
+
+#toolst3 #delt3:hover, #toolst3 #resett3:hover, #toolst3 #igualt3:hover {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */

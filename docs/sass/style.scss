@@ -1,0 +1,307 @@
+@use 'variable';
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'League Spartan', 'Sans Serif';
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    .options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h2{
+            font-size: 25px;
+            font-weight: 900;
+            margin-top: 5px;
+        }
+        .rigth{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            p{
+                font-size: 12px;
+                font-weight: 700;
+                margin-top: 10px;
+                margin-right: 5px;
+            }
+        }
+        .button{
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: -28%;
+            margin-left: 10%;
+            .numberoption{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                p{
+                    margin-top: 35%;
+                    font-weight: 700;
+                    font-size: 10px;
+                    margin-left: 5px;
+                }
+            }
+            .buttonoption{
+                margin-top: -10%;
+                justify-content: space-around;
+                border-radius: 15px;
+                height: 13px;
+                width: 85px;
+                margin-bottom: -18%;
+                background-color: yellow;
+                }
+                .btn{
+                    background-color: none;
+                    border-radius: 50%;
+                    height: 10px;
+                    width: 10px;
+                    margin-left: 7px;
+                    
+                
+                }
+           
+            }
+        }
+    .screen{
+        margin-top: -50%;
+        height: 75px;
+        width: 100%;
+        border-radius: 10px;
+        text-align: right;
+        font-size: 60px;
+        font-weight: 900;
+        padding-right: 15px;
+        padding-top: 2%;
+        background-color: aqua;
+        @media screen and (max-width: 375px) {
+            margin-top: -30%;
+            padding-right: 10px;
+         }
+    }
+    .tools{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        margin-top: -80%;
+        width: 101%;
+        height: 29%;
+        background-color: black;
+        padding: 5px;
+        border-radius: 10px;
+        @media screen and (max-width: 375px) {
+            margin-top: -30%;
+            height: 25%;
+         }
+        .numbers{
+            display: block;
+            justify-content: space-around;
+       }
+       .numbers button{
+        background-color: aqua;
+        height: 40px;
+        width: 70px;
+        margin-left: 6%;
+        margin-top: 2%;
+        font-size: 20px;
+        font-weight: 900;
+        @media screen and (max-width: 375px) {
+            width: 55px;
+            margin-left: 5%;
+         }
+       }
+       .numberfinal button{
+        width: 41%;
+       }
+   }
+}
+
+.container{
+    @media screen and (max-width: 375px) {
+           gap: 10%; 
+           margin-left: 8%;
+           margin-right: 8%;
+        }
+    }
+
+
+//theme1
+#themet1{
+     background-color: variable.$theme1_mainbackground;
+     }
+#optionst1{
+    color: variable.$text1_white;
+}
+#buttonoptiont1{
+    background-color: variable.$theme1_screenbackground;
+}
+#btnt11{
+    background-color: variable.$keys1_background_toggle;
+}
+#btnt11:hover{
+    cursor: grabbing;
+}
+#btnt12, #btnt13{
+    background-color: variable.$theme1_screenbackground;
+    border-style: none;
+}
+#screent1{
+    color: variable.$text1_white;
+    background-color: variable.$theme1_screenbackground;
+}
+#toolst1{
+    background-color: variable.$theme1_toggle_or_keypadbackground;
+}
+#toolst1 button{
+    background-color: variable.$keys1_background_grey;
+    box-shadow: 0px -3px 0px variable.$keys1_shadow_gray inset;
+    border-radius: 5px;
+    color: variable.$text1_gray;
+}
+#toolst1 button:hover{
+    cursor: grabbing;
+}
+#toolst1 #delt1{
+    background-color: variable.$keys1_background;
+    color: variable.$text1_white;
+    box-shadow: 0px -3px 0px variable.$keys1_shadow inset;
+}
+#toolst1 #resett1{
+    background-color: variable.$keys1_background;
+    color: variable.$text1_white;
+    box-shadow: 0px -3px 0px variable.$keys1_shadow inset;
+}
+#toolst1 #igualt1{
+    background-color: variable.$keys1_background_toggle;
+    color: variable.$text1_white;
+    box-shadow: 0px -3px 0px variable.$keys1_shadow_red inset;
+}
+#toolst1 #delt1:hover, #toolst1 #resett1:hover, #toolst1 #igualt1:hover{
+    opacity: 0.6;
+}
+
+
+//theme2
+#themet2{
+    background-color: variable.$theme2_mainbackground;
+    }
+#optionst2{
+   color: variable.$text2_gray;
+}
+#buttonoptiont2{
+   background-color: variable.$theme2_screenbackground;
+}
+#btnt22{
+   background-color: variable.$keys2_background_toggle;
+}
+#btnt22:hover{
+   cursor: grabbing;
+}
+#btnt21, #btnt23{
+   background-color: variable.$theme2_mainbackground;
+   border-style: none;
+}
+#screent2{
+   color: variable.$text2_gray;
+   background-color: variable.$theme2_screenbackground;
+}
+#toolst2{
+   background-color: variable.$theme2_toggle_or_keypadbackground;
+}
+#toolst2 button{
+   background-color: variable.$keys2_background_yellow;
+   box-shadow: 0px -3px 0px variable.$keys2_shadow_gray inset;
+   border-radius: 5px;
+   color: variable.$text2_gray;
+}
+#toolst2 button:hover{
+   cursor: grabbing;
+}
+#toolst2 #delt2{
+   background-color: variable.$keys2_background;
+   color: variable.$text2_white;
+   box-shadow: 0px -3px 0px variable.$keys2_shadow inset;
+}
+#toolst2 #resett2{
+   background-color: variable.$keys2_background;
+   color: variable.$text2_white;
+   box-shadow: 0px -3px 0px variable.$keys2_shadow inset;
+}
+#toolst2 #igualt2{
+   background-color: variable.$keys2_background_toggle;
+   color: variable.$text2_white;
+   box-shadow: 0px -3px 0px variable.$keys2_shadow_orange inset;
+}
+#toolst2 #delt2:hover, #toolst2 #resett2:hover, #toolst2 #igualt2:hover{
+   opacity: 0.6;
+}
+
+
+
+
+//theme3
+#themet3{
+    background-color: variable.$theme3_mainbackground;
+    }
+#optionst3{
+   color: variable.$text3_yellow;
+}
+#buttonoptiont3{
+   background-color: variable.$theme3_toggle_or_keypadbackground_screen;
+}
+#btnt33{
+   background-color: variable.$keys3_background_toggle;
+}
+#btnt33:hover{
+   cursor: grabbing;
+}
+#btnt31, #btnt32{
+   background-color: variable.$theme3_mainbackground;
+   border-style: none;
+}
+#screent3{
+   color: variable.$text3_yellow;
+   background-color: variable.$theme3_toggle_or_keypadbackground_screen;
+}
+#toolst3{
+   background-color: variable.$theme3_toggle_or_keypadbackground_screen;
+}
+#toolst3 button{
+   background-color: variable.$keys3_background_violet;
+   box-shadow: 0px -3px 0px variable.$keys3_shadow_magenta inset;
+   border-radius: 5px;
+   color: variable.$text3_yellow;
+}
+#toolst3 button:hover{
+   cursor: grabbing;
+}
+#toolst3 #delt3{
+   background-color: variable.$keys3_shadow_magenta;
+   color: variable.$text3_white;
+   box-shadow: 0px -3px 0px variable.$keys3_shadow inset;
+}
+#toolst3 #resett3{
+   background-color: variable.$keys3_shadow_magenta;
+   color: variable.$text3_white;
+   box-shadow: 0px -3px 0px variable.$keys3_shadow inset;
+}
+#toolst3 #igualt3{
+   background-color: variable.$keys3_background_toggle;
+   color: variable.$text3_blue;
+   box-shadow: 0px -3px 0px variable.$keys3_shadow_cyan inset;
+}
+#toolst3 #delt3:hover, #toolst3 #resett3:hover, #toolst3 #igualt3:hover{
+   opacity: 0.6;
+}
+
+
+//mobile
+
+
