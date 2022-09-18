@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/gustavoleyria/calculator-app-main.git
-- Live Site URL: https://gustavoleyria.github.io/intro-section-with-dropdown-navigation-main/
+- Live Site URL: https://gustavoleyria.github.io/calculator-app-main/
 
 ## My process
 
